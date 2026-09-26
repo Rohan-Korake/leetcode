@@ -14,7 +14,8 @@ public:
                 clockwiseDistance += distance[i];
             }
         }
-
+ 
+ 
         int counterClockwiseDistance = total_distance - clockwiseDistance;
         return min(clockwiseDistance, counterClockwiseDistance);
     }
