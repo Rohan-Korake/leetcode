@@ -1,15 +1,15 @@
 class Solution {
 public:
-    int countCharacters(std::vector<std::string>& words, std::string chars) {
-        std::unordered_map<char, int> charCount;
+    int countCharacters(vector<string>& words, string chars) {
+        unordered_map<char, int> charCount;
         for (char c : chars) {
             charCount[c]++;
         }
         
         int totalLength = 0;
         
-        for (const std::string& word : words) {
-            std::unordered_map<char, int> tempCount = charCount;
+        for (const string& word : words) {
+            unordered_map<char, int> tempCount = charCount;
             bool canForm = true;
             
             for (char c : word) {
